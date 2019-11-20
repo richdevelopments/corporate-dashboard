@@ -1,0 +1,39 @@
+
+body {
+    background-color: #F1F3F3    
+}
+
+#logo {
+    width: 50%;
+    height: 100%;
+}
+
+.navbar-default {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+
+.navbar-brand {
+    background-color: rgb(255, 255, 255);  
+    height: 60px;
+    
+    padding: 5px 0px;
+}
+
+#chart-area svg {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.hover-line {
+    stroke: #777;
+    stroke-width: 2px;
+    stroke-dasharray: 3,3;
+}
+
+#selections .col-md-4 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
