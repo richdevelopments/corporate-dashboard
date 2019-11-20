@@ -53,3 +53,51 @@ Timeline.prototype.initVis = function(){
 
     vis.wrangleData();
 };
+
+Timeline.prototype.wrangleData = function(){
+    var vis = this;
+
+    vis.variable = "call_revenue"
+
+    vis.dayNest = d3.nest()
+        .key(function(d){ return formatTime(d.date); })
+        .entries(calls)
+
+    vis.dataFiltered = vis.dayNest
+        .map(function(day){
+            return {
+                date: day.key,
+                sum: day.values.reduce(function(accumulator, current){
+                    return accumulator + current[vis.variable]
+                }, 0)               
+            }
+
+        })
+
+    vis.updateVis();
+}
+
+Timeline.prototype.updateVis = function(){
+    var vis = this;
+
+    vis.x.domain(d3.extent(vis.dataFiltered, (d) => { return parseTime(d.date); }));
+    vis.y.domain([0, d3.max(vis.dataFiltered, (d) => d.sum) ])
+
+    vis.xAxisCall.scale(vis.x)
+
+    vis.xAxis.transition(vis.t()).call(vis.xAxisCall)
+
+    vis.area0 = d3.area()
+        .x((d) => { return vis.x(parseTime(d.date)); })
+        .y0(vis.height)
+        .y1(vis.height);
+
+    vis.area = d3.area()
+        .x((d) => { return vis.x(parseTime(d.date)); })
+        .y0(vis.height)
+        .y1((d) => { return vis.y(d.sum); })
+
+    vis.areaPath
+        .data([vis.dataFiltered])
+        .attr("d", vis.area);
+}
