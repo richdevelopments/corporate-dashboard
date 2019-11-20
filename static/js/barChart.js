@@ -1,3 +1,4 @@
+
 BarChart = function(_parentElement, _variable, _title){
     this.parentElement = _parentElement;
     this.variable = _variable;
@@ -124,5 +125,5 @@ BarChart.prototype.updateVis = function(){
         .attr("height", function(d){ return (vis.height - vis.y(d.size)); })
         .attr("x", function(d){ return vis.x(d.category) })
         .attr("width", vis.x.bandwidth)
-        .attr("fill", "grey")
+        .attr("fill", "#3c3874")
 };
