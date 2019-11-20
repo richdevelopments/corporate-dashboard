@@ -6,23 +6,24 @@ body {
 
 #logo {
     position: relative;
-    left: 150%;
+    left: 352px;
     bottom: 5px;
-    width: 60%;
-    height: 130%;
+    width: 223px;
+    height: 69px;
 }
 
 .navbar-default {
     background-color: rgb(255, 255, 255);
     width: 100%;
+    border-color: rgb(255, 255, 255);
 }
 
 
 .navbar-brand {
     background-color: rgb(255, 255, 255);  
     height: 60px;
-    
     padding: 5px 0px;
+    border-color: rgb(255, 255, 255);
 }
 
 #chart-area svg {
