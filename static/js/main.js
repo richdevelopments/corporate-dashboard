@@ -37,3 +37,30 @@ d3.json("data/calls.json").then(function(data){
         stackedArea.wrangleData();
     })
 })
+
+function brushed() {
+    var selection = d3.event.selection || timeline.x.range();
+    var newValues = selection.map(timeline.x.invert)
+    changeDates(newValues)
+}
+
+function changeDates(values) {
+    calls = allCalls.filter(function(d){
+        return ((d.date > values[0]) && (d.date < values[1]))
+    })
+    
+    nestedCalls = d3.nest()
+        .key(function(d){
+            return d.category;
+        })
+        .entries(calls)
+
+    $("#dateLabel1").text(formatTime(values[0]))
+    $("#dateLabel2").text(formatTime(values[1]))
+
+    donut.wrangleData();
+    revenueBar.wrangleData();
+    unitBar.wrangleData();
+    durationBar.wrangleData();
+    stackedArea.wrangleData();
+}
