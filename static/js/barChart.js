@@ -29,7 +29,6 @@ BarChart.prototype.initVis = function(){
         .attr("fill", "none")
         .attr("stroke-width", "3px");
 
-    // vis.color = d3.scaleOrdinal(d3.schemeGreys[4]);
 
     vis.x = d3.scaleBand()
         .domain(["electronics", "furniture", "appliances", "materials"])
