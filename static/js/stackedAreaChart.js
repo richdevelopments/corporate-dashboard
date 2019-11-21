@@ -69,10 +69,10 @@ StackedAreaChart.prototype.wrangleData = function(){
                 accumulator[current.team] = accumulator[current.team] + current[vis.variable]
                 return accumulator;
             }, {
-                "northeast": 0,
-                "midwest": 0,
-                "south": 0,
-                "west": 0
+                "northeast": 1,
+                "midwest": 1,
+                "south": 1,
+                "west": 1
             })
         })
 
@@ -113,7 +113,7 @@ StackedAreaChart.prototype.updateVis = function(){
             .style("fill", function(d){
                 return vis.color(d.key)
             })
-            .style("fill-opacity", 0.5)
+            .style("fill-opacity", 1)
 };
 
 
@@ -144,7 +144,7 @@ StackedAreaChart.prototype.addLegend = function(){
         .attr("width", 10)
         .attr("height", 10)
         .attr("fill", d => { return d.color; })
-        .attr("fill-opacity", 0.5);
+        .attr("fill-opacity", 1);
 
     legendCol.append("text")
         .attr("class", "legendText")
