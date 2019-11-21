@@ -12,6 +12,7 @@ body {
 .navbar {
     position: relative;
     min-height: 70px;
+    padding-top: 10px;
 }
 
 .navbar-default {
