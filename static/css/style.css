@@ -12,10 +12,15 @@ body {
     height: 69px;
 }
 
+.navbar {
+    position: relative;
+    min-height: 70px;
+}
+
 .navbar-default {
     background-color: rgb(255, 255, 255);
     width: 100%;
-    border-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255); 
 }
 
 
@@ -26,7 +31,7 @@ body {
     border-color: rgb(255, 255, 255);
 }
 
-#chart-area svg {
+#bubble-chart svg {
     margin-left: auto;
     margin-right: auto;
     display: block;
