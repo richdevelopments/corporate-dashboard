@@ -46,8 +46,7 @@ The sales teams are split between 4 regions - Northeast, South, Midwe
 8. [Disclaimer](#disclaimer)
 
 ----
-
-# UX
+## UX
 
 ## Goals
 
