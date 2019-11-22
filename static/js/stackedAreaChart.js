@@ -10,7 +10,7 @@ StackedAreaChart = function(_parentElement){
 
 StackedAreaChart.prototype.initVis = function(){
     var vis = this;
-
+    //setting the variables for the margin covention
     vis.margin = { left:80, right:100, top:50, bottom:40 };
     vis.height = 370 - vis.margin.top - vis.margin.bottom;
     vis.width = 800 - vis.margin.left - vis.margin.right;
@@ -39,9 +39,10 @@ StackedAreaChart.prototype.initVis = function(){
     vis.yAxis = vis.g.append("g")
         .attr("class", "y axis");
 
+    //making a call to d3 stack
     vis.stack = d3.stack()
         .keys(["west", "south", "northeast", "midwest"]);
-
+    //path generator for area variable
     vis.area = d3.area()
         .x(function(d) { return vis.x(parseTime(d.data.date)); })
         .y0(function(d) { return vis.y(d[0]); })
