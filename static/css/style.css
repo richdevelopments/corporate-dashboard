@@ -1,6 +1,6 @@
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: #F1F3F3;
     color: rgb(60, 56, 116);    
 }
 
@@ -76,15 +76,15 @@ body {
 }
 
 #left-charts {
-    background-color: #F1F3F3;
-    border: 5px solid white;
-    border-radius: 15px;
+    background-color: #FFFFFF;
+    border: 5px solid #F1F3F3;
+    /* border-radius: 15px; */
     padding-top: 5px;
 }
 
 #right-charts {
-    background-color: #F1F3F3; 
-    border-radius: 15px;
+    background-color: #FFFFFF;
+    /* border-radius: 15px; */
     margin-top: 5px;
 }
 
@@ -98,28 +98,23 @@ body {
 
 #units-sold {
     border: 1px solid white;
+    margin-top: 5px;
 }
 
 #revenue {
     border: 1px solid white;
+    margin-top: 5px;
 }
 
 #call-duration {
     border: 1px solid white;
+    margin-top: 5px;
 }
 
-/* west {
-    fill:coral !important;
+.contact-details {
+    margin-left: 10px;
 }
 
-south {
-    fill: cornflowerblue !important;
+.contact {
+    font-size: 10px
 }
-
-northeast {
-    fill: lime !important;
-}
-
-midwest {
-    fill: gold !important;
-} */
