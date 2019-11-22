@@ -9,7 +9,7 @@ DonutChart = function(_parentElement, _variable){
 
 DonutChart.prototype.initVis = function(){
 	var vis = this;
-
+    //setting margins, width and height variables
 	vis.margin = { left:40, right:100, top:40, bottom:10 };
 	vis.width = 350 - vis.margin.left - vis.margin.right;
 	vis.height = 140 - vis.margin.top - vis.margin.bottom;
@@ -24,10 +24,12 @@ DonutChart.prototype.initVis = function(){
         .attr("transform", "translate(" + (vis.margin.left + (vis.width / 2) - 50) + 
             ", " + (vis.margin.top + (vis.height / 2)) + ")");
 
+    //setting the pie layout function to pass the data to
 	vis.pie = d3.pie()
 		.value((d) => { return d.count; })
-		.sort(null);
-
+        .sort(null);
+        
+    // setting the arc generator
 	vis.arc = d3.arc()
 		.innerRadius(vis.radius - 15)
 		.outerRadius(vis.radius);

@@ -38,7 +38,7 @@ Timeline.prototype.initVis = function(){
         .attr("transform", "translate(0," + vis.height +")");
 
     vis.areaPath = vis.g.append("path")
-        .attr("fill", "#ccc");
+        .attr("fill", "#3c3874");
 
     // Initialize brush component
     vis.brush = d3.brushX()
