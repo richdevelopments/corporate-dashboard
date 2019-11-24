@@ -205,7 +205,7 @@ Using the ```.extent``` method to define the maximum and minimum coordinates tha
 
 Pie Chart -
 
-- Displays the size of the company. When hovering over a slice displays the units of each.
+- Displays the size of the companies. When hovering over a slice displays the units of each.
 
 Bar Chart -
 
