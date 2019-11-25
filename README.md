@@ -57,7 +57,7 @@ The Bar Charts on the right will change accordingly, displaying an average og ea
 
 ## Goals
 
-### Visitor Goals
+### User Goals
 
 
 The central target audience for Corporate Sales Dashboard are:
@@ -81,7 +81,6 @@ User goals are:
 
 ## User Stories
 
-### Visitor Stories
 
 As a user of Corportate Sales Dashboard Goals I expect/want/need:
 
