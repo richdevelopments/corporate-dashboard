@@ -113,15 +113,15 @@ I created the Corportate Sales Dashboard logo at designevo.com
 
 - The colours for this project were chosen because I wanted to the site to look smart and corporate and I feel I have achieved this.
 
-- A dark purple colour was chosen for the main text and headers as it made the text stand out on the lighter background.
+- A dark purple colour was chosen for the main text and headers as it made the text stand out on the lighter blue background.
 
 - The navbar background colour is white, which makes the logo stand out and looks smart.
 
-- The body colour is grey for a corporate feel.
+- The body colour is a light but bold blue and has a very slight gradient. I feel this is a good colour to make the other elememnts stand out.
 
-- I tried to make the 4 regions in the stacked chart colourful so they stand out on the white background. As also the rest of the page is plane.
+- I tried to make the 4 regions in the stacked chart colourful so they stand out on the light blue background.
 
-- The bar charts are a dark purple so they stand out on the white background but are also differeent to the stacked chart.
+- The bar charts are a dark purple so they stand out on the blue background but are also different to the stacked chart.
 
 ### Styling
 
