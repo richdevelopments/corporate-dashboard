@@ -15,6 +15,7 @@
     <!-- D3 link -->
     <script src="https://d3js.org/d3.v5.js"></script>
 
+
 </head>
 
 <body>
@@ -26,10 +27,29 @@
             </div>      
         </div>
     </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-11 col-lg-11">
+                <button class="button-instructions">Instructions</button>
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div id="instructions-fade">
+                        <p>
+                            <b>Instructions:</b>
+                            <p> Selete a metric from the dropdown menu to see each regions performance for that metric throughout the year.
+                            To analyse the data in a more specific time period in the year, drag over the Timeline chart to select the desired time in the year. 
+                            The Stacked Chart will then zoom in to that time period, displaying the results for all 4 regions. 
+                            The Bar charts on the right will display an average of the performance for that time period selected and the Pie chart will display the company size, 
+                            which you can hover over to see the exact units per slice.
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container">
         <div class="row">
-            <div id="left-charts" class="col-sm-12 col-md-8">
+            <div id="left-charts" class="col-sm-12 col-md-12 col-lg-8">
                 <div class="row">
                     <div class="col-md-4">
                         <label>Dates: <span id="dateLabel1">01/01/2017</span> - <span id="dateLabel2">10/12/2017</span></label>
@@ -48,12 +68,16 @@
                 <div><p class="timeline-label">Timeline </p></div>
                 <div id="timeline"></div>
             </div>
-            <div id="right-charts" class="col-sm-12 col-md-4">
+            <div id="right-charts" class="col-xs-6 col-sm-12 col-md-12 col-lg-4">
                 <div class="row">
-                    <div class="col-sm-12"  id="company-size"></div>
-                    <div class="col-sm-12" id="units-sold"></div>                    
-                    <div class="col-sm-12" id="revenue"></div>
-                    <div class="col-sm-12" id="call-duration"></div>                    
+                <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-12">
+                    <div  id="company-size"></div>
+                    <div  id="units-sold"></div>
+                </div> 
+                <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-12">                   
+                    <div id="revenue"></div>
+                    <div id="call-duration"></div> 
+                </div>                   
                 </div>
             </div>
         </div>
@@ -77,8 +101,14 @@
 <script type="text/javascript" src="static/js/stackedAreaChart.js"></script>
 <script type="text/javascript" src="static/js/donutChart.js"></script>
 <script type="text/javascript" src="static/js/timeline.js"></script>
-<script type="text/javascript" src="static/js/bubbleChart.js"></script>
 <script type="text/javascript" src="static/js/main.js"></script>
+<script>
+$(document).ready(function(){
+ $("button").click(function(){
+    $("#instructions-fade").fadeToggle("slow");
+  });
+});
+</script>
 
 
 </body>

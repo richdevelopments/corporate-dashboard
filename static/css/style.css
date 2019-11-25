@@ -1,7 +1,7 @@
 
 body {
-    background-color: #F1F3F3;
-    color: rgb(60, 56, 116);    
+    background-color: rgb(21,125,203);
+    color:  rgb(255, 255, 255);
 }
 
 #logo {
@@ -31,10 +31,47 @@ body {
     padding: 5px 0px;
 }
 
-#bubble-chart svg {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+/* button {
+    background-color: #D62503;
+    color: white;
+    padding: 4px 16px;
+    text-decoration: none;
+    margin: 2px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+} */
+
+.button-instructions {
+    background-color: #303131;
+    color: white;
+    border: 2px solid #303131;
+    border-radius: 6px;
+    margin-bottom: 35px;
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif; 
+    font-size: 25px;
+    font-weight: 700;
+    padding: 4px 40px;
+    float: right;
+    margin-right: 20px;
+}
+
+#instructions-fade {
+    display: none;
+    color: black;
+    background-color: rgb(21,125,203);
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    text-align: justify;
+    border-radius: 8px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    float: left;
 }
 
 .axis {
@@ -76,38 +113,39 @@ body {
 }
 
 #left-charts {
-    background-color: #FFFFFF;
-    border: 5px solid #F1F3F3;
+    background-color: rgb(21,125,203);
+    /* border: 5px solid #F1F3F3; */
     /* border-radius: 15px; */
     padding-top: 5px;
 }
 
 #right-charts {
-    background-color: #FFFFFF;
+    background-color: rgb(21,125,203);
     /* border-radius: 15px; */
     margin-top: 5px;
 }
 
 .timeline-label {
+    font-size: 15px;
     padding-left: 20px;
 }
 
 #company-size {
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 #units-sold {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     margin-top: 5px;
 }
 
 #revenue {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     margin-top: 5px;
 }
 
 #call-duration {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     margin-top: 5px;
 }
 
