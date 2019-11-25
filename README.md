@@ -159,13 +159,15 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) duri
 
 ### Dashboard Page
 
-<div align="center">
-<img src="" alt="Corportate Sales Dashboard page on all major screen sizes" >
+<div align="center">
+    <img src="https://i.ibb.co/XyRKQ5c/Screenshot-2019-11-25-at-09-47-54.png" href="https://richdevelopments.github.io/corporate-dashboard/" target="_blank" rel="noopener" alt="Image of how home page looks on all screen sizes" aria-label="Image of how home page looks on all screen sizes" />
 </div>
+<br>
 
 **Headings**
 
-- The Main page has 
+- Most of ther charts have subheadings above them. The Stacked Chart has the date range selected above it. 
+This dynamically changes depending on the date range selected.
 
 **Charts**
 
@@ -241,6 +243,7 @@ Bar Chart -
 - [GitPod](https://www.gitpod.io/) for developing and to handle version control.
 - [GitHub](https://github.com/) to store and share all project code.
 - [Am I Responsive](http://ami.responsivedesign.is/) to create the images in this readme file of each page displayed on different screen sizes.
+- [Designevo](designevo.com) 
 
 ### Libraries
 - [D3](https://d3js.org/) to create the charts.
