@@ -21,9 +21,9 @@ The Bar Charts on the right will change accordingly, displaying an average og ea
 1. [UX](#ux)
     - [Goals](#goals)
         - [User Goals](#user-goals)
-        - [Corporate Sales Dashboard Goals](#Corporate-sales-dashboard-goals)
+        - [Corporate Sales Dashboard Goals](#corporate-sales-dashboard-goals)
     - [User Stories](#user-stories)
-        - [User Stories](#visitor-stories)
+        - [User Stories](#user-stories)
     - [Design Choices](#design-choices)
     - [Wireframes](#wireframes)
 
@@ -73,7 +73,7 @@ User goals are:
 - To be able to select a specific time in the year to visualize and compare the companies performance.
 - To be able to visually monitor the health of their business and departments. 
 
-### Corportate Sales Dashboard
+### Corportate Sales Dashboard Goals
 
 - Provide an effective, easy to use dashboard for businesses and sales teams to visually analyse their companies statistics throughout the year.
 
@@ -138,7 +138,9 @@ I created the Corportate Sales Dashboard logo at designevo.com
 
 These wireframes were created using [Balsamiq](https://balsamiq.com/) during the Scope Plane part of the design and planning process for this project. The design did change some what in development process.
 
-- [Home]()
+- [Dashboard - Desktop](https://i.ibb.co/CVt2HmH/Corporate-Sales-Dashboard.png)
+- [Dashboard - Tablet](https://i.ibb.co/hF6P5Pb/CSD-tablet.png)
+- [Dashboard - Mobile](https://i.ibb.co/Q8Z1CYG/CSD-mobile.png)
 
 # Features
 
