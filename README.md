@@ -164,6 +164,11 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) duri
 - Most of the charts have subheadings above them. The Stacked Chart has the date range above it. 
 This dynamically changes depending on the date range selected.
 
+**Instructions button**
+
+- The Instructions button reveals instruction on how to use the dashboard. I added some jQuery to make the transition smoother, 
+fading in when the button is first clicked and fading out when the Instruction button is clicked again.
+
 **Charts**
 
 **Stacked Chart** -
