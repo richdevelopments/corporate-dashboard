@@ -287,7 +287,9 @@ Responsive design was also tested in the Chrome Developer Tools device
 
 # Deployment
 
- The site is now successfully deployed.
+ I deployed this website using the Master Branch on hosting platform GitHub Pages. I did this by going into my GitHub repository, going to Settings, publishing from the Master Branch and pressing Save. I took some guidance from this page: https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages
+
+Before deployment, I developed the structure of my site on GitPod and used git init, git add, git commit -m and git push to save my changes and versions to GitHub Pages, so the natural host was GitHub.
 
 # Credits
 
