@@ -342,7 +342,9 @@ Responsive design was also tested in the Chrome Developer Tools device
 
 ### Bugs Descovered
 #### Solved Bugs
-Added Bootstrap to make Dashboard responsive.
+- Added Bootstrap to make Dashboard responsive.
+- I did have a problem with the D3.js file redering charts, so I imported it using the D3 link at the top of the HTML file which work well afterwards.
+Possibly a bad file path to the D3.js file.
 
 #### Unsolved Bugs
 None
