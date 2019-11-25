@@ -3,7 +3,7 @@
 ## Introduction
 ----
 <div align="center">
-    <img src="https://i.ibb.co/XyRKQ5c/Screenshot-2019-11-25-at-09-47-54.png" href="https://richdevelopments.github.io/corporate-dashboard/" target="_blank" rel="noopener" alt="Image of how home page looks on all screen sizes" aria-label="Image of how home page looks on all screen sizes" />
+    <img src="https://i.ibb.co/2qCHHmW/Screenshot-2019-11-25-at-16-45-54.png" href="https://richdevelopments.github.io/corporate-dashboard/" target="_blank" rel="noopener" alt="Image of how home page looks on all screen sizes" aria-label="Image of how home page looks on all screen sizes" />
 </div>
 <br>
 
@@ -160,7 +160,7 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) duri
 ### Dashboard Page
 
 <div align="center">
-    <img src="https://i.ibb.co/XyRKQ5c/Screenshot-2019-11-25-at-09-47-54.png" href="https://richdevelopments.github.io/corporate-dashboard/" target="_blank" rel="noopener" alt="Image of how home page looks on all screen sizes" aria-label="Image of how home page looks on all screen sizes" />
+    <img src="https://i.ibb.co/2qCHHmW/Screenshot-2019-11-25-at-16-45-54.png" href="https://richdevelopments.github.io/corporate-dashboard/" target="_blank" rel="noopener" alt="Image of how home page looks on all screen sizes" aria-label="Image of how home page looks on all screen sizes" />
 </div>
 <br>
 
@@ -264,11 +264,40 @@ All steps on desktop were repeated in browsers: Firefox, Chrome and I
 
 #### Elements on the Dashboard page
 
-1. Navbar
-    Logo displays in the Navbar as expected __Pass__
+1. Navbar 
+     - Logo displays in the Navbar as expected. __Pass__
 
+2.Headings 
+    - Confirm the headings on the page is easy to read. __Pass__
 
-- __Pass__
+3.Page text
+    - Confirm the text for the page is easy to read. __Pass__
+
+4.Instruction button 
+    - Displaying instructions as expected. __Pass__
+
+5.Date above Dropdown.
+    - Displaying the dates selected and updating dynamically as expected. __Pass__
+
+6.Dropdown menu 
+    - Displaying and working as expected. __Pass__
+
+7.Stacked Chart 
+    - Displaying results and changing dynamically as expected. __Pass__
+
+8.Timeline Chart
+    - Displaying and working as expected. __Pass__
+
+9.Pie Chart 
+    - Displaying and updating as expected. __Pass__
+    - Hover over slices displays values. __Pass__
+
+10.Bar Charts
+    - Displaying and updating as expected. __Pass__
+
+11.Contact information
+    - Confirm they are easily to read. __Pass__
+
 
 
 ### Testing undertaken on tablet and phone devices
@@ -276,14 +305,47 @@ All steps below were repeated to test mobile and tablet specific elem
 
 Responsive design was also tested in the Chrome Developer Tools device simulators on all options and orientations.
 
+1. Navbar 
+     - Logo displays in the Navbar as expected. __Pass__
+
+2.Headings 
+    - Confirm the headings on the page is easy to read. __Pass__
+
+3.Page text
+    - Confirm the text for the page is easy to read. __Pass__
+
+4.Instruction button 
+    - Displaying instructions as expected. __Pass__
+
+5.Date above Dropdown.
+    - Displaying the dates selected and updating dynamically as expected. __Pass__
+
+6.Dropdown menu 
+    - Displaying and working as expected. __Pass__
+
+7.Stacked Chart 
+    - Displaying results and changing dynamically as expected. __Pass__
+
+8.Timeline Chart
+    - Displaying and working as expected. __Pass__
+
+9.Pie Chart 
+    - Displaying and updating as expected. __Pass__
+    - Hover over slices displays values. __Pass__
+
+10.Bar Charts
+    - Displaying and updating as expected. __Pass__
+
+11.Contact information
+    - Confirm they are easily to read. __Pass__
+
 
 ### Bugs Descovered
 #### Solved Bugs
-
-
+Added Bootstrap to make Dashboard responsive.
 
 #### Unsolved Bugs
-
+None
 
 # Deployment
 
