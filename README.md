@@ -23,7 +23,6 @@ The Bar Charts on the right will change accordingly, displaying an average og ea
         - [User Goals](#user-goals)
         - [Corporate Sales Dashboard Goals](#corporate-sales-dashboard-goals)
     - [User Stories](#user-stories)
-        - [User Stories](#user-stories)
     - [Design Choices](#design-choices)
     - [Wireframes](#wireframes)
 
@@ -42,13 +41,9 @@ The Bar Charts on the right will change accordingly, displaying an average og ea
 
 7. [Credits](#credits)
     - [Content](#content)
-    - [Media](#media)
-    - [Code](#code)
     - [Acknowledgements](#acknowledgements)
 
-8. [Contact](#contact)
-
-9. [Disclaimer](#disclaimer)
+8. [Disclaimer](#disclaimer)
 
 
 ----
@@ -73,7 +68,7 @@ User goals are:
 - To be able to select a specific time in the year to visualize and compare the companies performance.
 - To be able to visually monitor the health of their business and departments. 
 
-### Corportate Sales Dashboard Goals
+### Corporate Sales Dashboard Goals
 
 - Provide an effective, easy to use dashboard for businesses and sales teams to visually analyse their companies statistics throughout the year.
 
