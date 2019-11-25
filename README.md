@@ -20,7 +20,7 @@ The Bar Charts on the right will change accordingly, displaying an average og ea
 ----
 1. [UX](#ux)
     - [Goals](#goals)
-        - [User Goals](#visitor-goals)
+        - [User Goals](#user-goals)
         - [Corporate Sales Dashboard Goals](#Corporate-sales-dashboard-goals)
     - [User Stories](#user-stories)
         - [User Stories](#visitor-stories)
