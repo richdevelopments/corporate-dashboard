@@ -7,7 +7,7 @@
 </div>
 <br>
 
-[Corporate Sales Dashboard]() is a **data dashboard** for a group of corporate sales teams, built using D3.js. The sales teams sell all kinds of goods to companies across the nation, selling raw materials like planks of wood and bags of cement to construction companies, selling tv's and computers to electrical stores, fridges and washing machines to household appliance stores and furniture to a few different outlets.
+[Corporate Sales Dashboard](https://richdevelopments.github.io/corporate-dashboard/) is a **data dashboard** for a group of corporate sales teams, built using D3.js. The sales teams sell all kinds of goods to companies across the nation, selling raw materials like planks of wood and bags of cement to construction companies, selling tv's and computers to electrical stores, fridges and washing machines to household appliance stores and furniture to a few different outlets.
 The data dashboard is to find out which parts of the business are doing better than others.
 The sales teams are split between 4 regions - Northeast, South, Midwest and West, and they want to see how their stats compare between them.
 
