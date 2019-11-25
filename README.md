@@ -166,7 +166,7 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) duri
 
 **Headings**
 
-- Most of ther charts have subheadings above them. The Stacked Chart has the date range selected above it. 
+- Most of the charts have subheadings above them. The Stacked Chart has the date range above it. 
 This dynamically changes depending on the date range selected.
 
 **Charts**
