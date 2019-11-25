@@ -14,12 +14,9 @@
     <link rel="stylesheet" href="static/css/style.css">
     <!-- D3 link -->
     <script src="https://d3js.org/d3.v5.js"></script>
-
-
 </head>
 
 <body>
-
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="navbar-brand">
@@ -33,20 +30,17 @@
                 <button class="instructions-button">Instructions</button>
                 <div class="col-sm-12 col-md-12 col-lg-12">
                     <div id="instructions-fade">
-                        <p>
-                            <b>Instructions:</b>
-                            <p> Selete a metric from the dropdown menu to see each regions performance for that metric throughout the year.
-                            To analyse the data in a more specific time period in the year, drag over the Timeline chart to select the desired time in the year. 
-                            The Stacked Chart will then zoom in to that time period, displaying the results for all 4 regions. 
-                            The Bar charts on the right will display an average of the performance for that time period selected and the Pie chart will display the company size, 
-                            which you can hover over to see the exact units per slice.
-                            </p>
+                        <p> Selete a metric from the dropdown menu to see each regions performance for that metric throughout the year.
+                        To analyse the data in a more specific time period in the year, drag over the Timeline chart to select the desired time in the year. 
+                        The Stacked Chart will then zoom in to that time period, displaying the results for all 4 regions. 
+                        The Bar charts on the right will display an average of the performance for that time period selected and the Pie chart will display the company size, 
+                        which you can hover over to see the exact units per slice.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <div class="container">
         <div class="row">
             <div id="left-charts" class="col-sm-12 col-md-12 col-lg-8">
@@ -65,7 +59,9 @@
                     </div>                          
                 </div>
                 <div id="stacked-area"></div>
-                <div><p class="timeline-label">Timeline </p></div>
+                <div>
+                    <p class="timeline-label">Timeline </p>
+                </div>
                 <div id="timeline"></div>
             </div>
             <div id="right-charts" class="col-xs-6 col-sm-12 col-md-12 col-lg-4">
@@ -83,11 +79,9 @@
         </div>
     </div>
     <div class="contact-details">
-    <label class="contact">Contact</label>
-    <p>admin@csd.coe.yewkay</p>
+        <label class="contact">Contact</label>
+        <p>admin@csd.coe.yewkay</p>
     </div>
-
-    
 
 <!-- External JS Libraries -->
 <script type="text/javascript" src="static/js/jquery.min.js"></script>
@@ -102,6 +96,8 @@
 <script type="text/javascript" src="static/js/donutChart.js"></script>
 <script type="text/javascript" src="static/js/timeline.js"></script>
 <script type="text/javascript" src="static/js/main.js"></script>
+
+<!-- Instructions fade toggle -->
 <script>
 $(document).ready(function(){
  $("button").click(function(){
