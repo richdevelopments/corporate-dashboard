@@ -1,10 +1,9 @@
-# Corporate Sales Dashboard
+# Corporate Sales Dashboard
 
-
-## Introduction
+## Introduction
 ----
-<div align="center">
-    <img src="" href="" target="_blank" rel="noopener" alt="Image of how home page looks on all screen sizes" aria-label="Image of how home page looks on all screen sizes" />
+<div align="center">
+    <img src="https://i.ibb.co/XyRKQ5c/Screenshot-2019-11-25-at-09-47-54.png" href="https://richdevelopments.github.io/corporate-dashboard/" target="_blank" rel="noopener" alt="Image of how home page looks on all screen sizes" aria-label="Image of how home page looks on all screen sizes" />
 </div>
 <br>
 
@@ -12,45 +11,53 @@
 The data dashboard is to find out which parts of the business are doing better than others.
 The sales teams are split between 4 regions - Northeast, South, Midwest and West, and they want to see how their stats compare between them.
 
-## Table of Contents
+To use the dashboard the user can select a metric from the dropdown, either Revenue, Call Time and Units Sold.
+The user can then drag over the Timeline chart to select and zoom in on a specific period in the year, to see and compare the performanceof all 4 regions.
+The Bar Charts on the right will change accordingly, displaying an average og each of the metrics and the Pie Chart changing displaying company size.
+
+
+## Table of Contents
 ----
-1. [UX](#ux)
-    - [Goals](#goals)
-        - [User Goals](#user-goals)
-        - [Corporate Sales Dashboard Goals](#Corporate-sales-dashboard-goals)
-    - [User Stories](#user-stories)
-        - [User Stories](#user-stories)
-    - [Design Choices](#design-choices)
-    - [Wireframes](#wireframes)
+1. [UX](#ux)
+    - [Goals](#goals)
+        - [User Goals](#visitor-goals)
+        - [Corporate Sales Dashboard Goals](#Corporate-sales-dashboard-goals)
+    - [User Stories](#user-stories)
+        - [User Stories](#visitor-stories)
+    - [Design Choices](#design-choices)
+    - [Wireframes](#wireframes)
 
-2. [Features](#features)
-    - [Existing Features](#existing-features)
-        - [Dashboard Page](#dashboard-page)
-    - [Features Left to Implement](#features-left-to-implement)
+2. [Features](#features)
+    - [Existing Features](#existing-features)
+        - [Dashboard Page](#dashboard-page)
+    - [Features Left to Implement](#features-left-to-implement)
 
-3. [Technologies Used](#technologies-used)
+3. [Data](#data)
 
-4. [Testing](#testing)
+4. [Technologies Used](#technologies-used)
 
-5. [Deployment](#deployment)
-    
+5. [Testing](#testing)
 
-6. [Credits](#credits)
-    - [Content](#content)
-    - [Media](#media)
-    - [Code](#code)
-    - [Acknowledgements](#acknowledgements)
+6. [Deployment](#deployment)
 
-7. [Contact](#contact)
+7. [Credits](#credits)
+    - [Content](#content)
+    - [Media](#media)
+    - [Code](#code)
+    - [Acknowledgements](#acknowledgements)
 
-8. [Disclaimer](#disclaimer)
+8. [Contact](#contact)
+
+9. [Disclaimer](#disclaimer)
+
 
 ----
-## UX
 
-## Goals
+# UX
 
-### User Goals
+## Goals
+
+### Visitor Goals
 
 
 The central target audience for Corporate Sales Dashboard are:
@@ -66,7 +73,7 @@ User goals are:
 - To be able to select a specific time in the year to visualize and compare the companies performance.
 - To be able to visually monitor the health of their business and departments. 
 
-### Corporate Sales Dashboard Goals
+### Corportate Sales Dashboard
 
 - Provide an effective, easy to use dashboard for businesses and sales teams to visually analyse their companies statistics throughout the year.
 
@@ -74,7 +81,7 @@ User goals are:
 
 ## User Stories
 
-### Visitor Stories
+### Visitor Stories
 
 As a user of Corportate Sales Dashboard Goals I expect/want/need:
 
@@ -89,21 +96,21 @@ As a user of Corportate Sales Dashboard Goals I expect/want/need:
 6. As a user accessing this site from a mobile phone or tablet, I want the dashboard to have been designed responsively so that it is still easy to navigate and use on my smaller devices.
 
 
-## Design Choices
+## Design Choices
 
 I wanted the Corportate Sales Dashboard to have a smart corporate feel, keeping things simple to emphasis the data and functioning. The following design choices were made with this in mind:
 
-### Fonts
+### Fonts
 
 - The primary font `Source Sans Pro` was chosen for the main text of the site because it is easy to read and complements the fonts chosen very well. A extra reason for picking this font is that it is still easy to read when printed small.
 
 - I used the `Sans-Serif` font for the headings and axis because it is simple and clear. The font stands out very well.
 
-### Logo
+### Logo
 
 I created the Corportate Sales Dashboard logo at designevo.com
 
-### Colours
+### Colours
 
 - The colours for this project were chosen because I wanted to the site to look smart and corporate and I feel I have achieved this.
 
@@ -117,7 +124,7 @@ I created the Corportate Sales Dashboard logo at designevo.com
 
 - The bar charts are a dark purple so they stand out on the white background but are also differeent to the stacked chart.
 
-### Styling
+### Styling
 
 - The .attr() and .style() attributes were used to style and animate the charts.
 
@@ -128,27 +135,28 @@ I created the Corportate Sales Dashboard logo at designevo.com
     - The **pie chart** has a hover effect that when hovering the different sections of the chart it displays the value that it represents.
 
 
-## Wireframes
+## Wireframes
 
 These wireframes were created using [Balsamiq](https://balsamiq.com/) during the Scope Plane part of the design and planning process for this project. The design did change some what in development process.
 
 - [Home]()
 
-# Features
+# Features
 
-## Existing Features
+## Existing Features
 
 - Navbar
 
     - The navigation bar features the Corportate Sales Dashboard logo in the center.
        
 
-- Footer
-    - The footer features:
-        - Contact information for Corportate Sales Dashboard.
+- Footer
+    - The footer features:
+        - Contact information for Corportate Sales Dashboard.
 
 
-### Dashboard Page
+
+### Dashboard Page
 
 <div align="center">
 <img src="" alt="Corportate Sales Dashboard page on all major screen sizes" >
@@ -164,7 +172,7 @@ Stacked Chart -
  - The Stacked chart shows how ratios are changing over time.
  - Shows how the entire companies value has been changing over time.
  
-- The user can zoom in on a specific date range, selected on the timeline chart and the X axis of the Stacked Chart will dynamically change to the selected time in the year and the chart will display that data associated  to that time range.
+- The user can zoom in on a specific date range selected on the timeline chart and the X and Y axis of the Stacked Chart will dynamically change to the selected time in the year and the chart will display that data associated to that time range.
 
 - The user can select a metric - Revenue, Call Time and Units Sold from the dropdown menu then that data will be displayed in the Stacked Chart.
 
@@ -215,72 +223,71 @@ Bar Chart -
 
 - Select to display the diferent metrics Revenue, Call Time and Units Sold across all 4 regions.
 
-## Features Left to Implement
+## Features Left to Implement
 
 1. Add more areas of a company to display the data of
 
 2. Add more interesting graphs
 
 
-# Data
+# Data
  - For the data for this project I am using a JSON file which I generated using an online JSON generator - https://mockaroo.com/
 
-# Technologies Used
+# Technologies Used
 
-### Tools
+### Tools
 - [Imgbb](https://imgbb.com) to store all external images for this project.
 - [GitPod](https://www.gitpod.io/) for developing and to handle version control.
 - [GitHub](https://github.com/) to store and share all project code.
 - [Am I Responsive](http://ami.responsivedesign.is/) to create the images in this readme file of each page displayed on different screen sizes.
 
-### Libraries
+### Libraries
 - [D3](https://d3js.org/) to create the charts.
+
 - [JQuery](https://jquery.com) to simplify DOM manipulation and styling.
 - [Bootstrap](https://www.bootstrapcdn.com/) to simplify the structure of the website and make the website responsive easily.
 
-### Languages
+### Languages
 - This project uses HTML, CSS and JavaScript programming languages.
 
-# Testing
-## Manual Testing
+# Testing
+## Manual Testing
 Below is a detailed account of all the manual testing that has been done to confirm all areas of the site work as expected.
 
-### Testing undertaken on desktop
+### Testing undertaken on desktop
 
 All steps on desktop were repeated in browsers: Firefox, Chrome and Internet Explorer and on two different desktop screen sizes.
 
-#### Elements on every page
+#### Elements on the Dashboard page
 
 1. Navbar
     Logo displays in the Navbar as expected __Pass__
 
 
-#### Dashboard Page
-
 - __Pass__
 
 
-### Testing undertaken on tablet and phone devices
+### Testing undertaken on tablet and phone devices
 All steps below were repeated to test mobile and tablet specific elements on my iPhoneX and tablet, in both the Safari browser and Chrome internet browser.
 
 Responsive design was also tested in the Chrome Developer Tools device simulators on all options and orientations.
 
 
-### Bugs discovered:
-#### Solved bugs
+### Bugs Descovered
+#### Solved Bugs
 
 
 
-#### Unsolved bugs
+#### Unsolved Bugs
 
 
-# Deployment
+# Deployment
 
  The site is now successfully deployed.
 
-# Credits
+# Credits
 
-## Content
+## Content
 
 #### Stacked Chart
 
@@ -291,11 +298,12 @@ Responsive design was also tested in the Chrome Developer Tools device
 
 #### Pie Chart
 
+https://github.com/d3/d3-shape#arcs
 
-## Acknowledgements
+## Acknowledgements
 
 Special thanks to my mentor Aaron Sinnott for his patience and willingness to teach me his coding expertise and and also tutor support who are always awesome.
 
-## Disclaimer
+## Disclaimer
 The content of this website is educational purposes only.
 
