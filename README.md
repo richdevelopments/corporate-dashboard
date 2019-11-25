@@ -11,9 +11,9 @@
 The data dashboard is to find out which parts of the business are doing better than others.
 The sales teams are split between 4 regions - Northeast, South, Midwest and West, and they want to see how their stats compare between them.
 
-To use the dashboard the user can select a metric from the dropdown, either Revenue, Call Time and Units Sold.
-The user can then drag over the Timeline chart to select and zoom in on a specific period in the year, to see and compare the performanceof all 4 regions.
-The Bar Charts on the right will change accordingly, displaying an average og each of the metrics and the Pie Chart changing displaying company size.
+To use the dashboard the user can select a metric from the dropdown, either Revenue, Call Time and Units Sold, to display the performance of the 4 regions throughtout the whole year.
+The user can then drag over the Timeline chart to select and zoom in on a specific period in the year, to see and compare the performance of all 4 regions.
+The Bar Charts on the right will change accordingly, displaying an average of each of the metrics and the Donut Chart changing to display company size.
 
 
 ## Table of Contents
@@ -126,7 +126,7 @@ I created the Corportate Sales Dashboard logo at designevo.com
 
 - Hover Effects
 
-    - The **Pie chart** has a hover effect that when hovering the different sections of the chart it displays the value that it represents.
+    - The **Donut Chart** has a hover effect that when hovering the different sections of the chart it displays the value that it represents.
 
 
 ## Wireframes
@@ -214,7 +214,7 @@ The brush generator -
 Using the ```.brushX``` call explicitly tells d3 that I want to create a one dimensional brush that goes in the X direction. 
 Using the ```.extent``` method to define the maximum and minimum coordinates that the brush should run between. Which means that D3 will create an overlay of the brush that runs from the 0,0 point of the visualization area all the way down to the bottom corner of the SVG grid. This means the user can draw a brush over any part of the visualizartion area. I'm then calling the brush in the context of the visualization by attest a group to the visuslization area buy giving it a call of brush```attr("class", "brush")``` and then using the ```.call``` method to run the brush generator ```.call(vis.brush);```
 
-**Pie Chart** -
+**Donut Chart** -
 
 - Displays the size of the companies. When hovering over a slice displays the units of each.
 
@@ -288,7 +288,7 @@ All steps on desktop were repeated in browsers: Firefox, Chrome and I
 8.Timeline Chart
     - Displaying and working as expected. __Pass__
 
-9.Pie Chart 
+9.Donut Chart 
     - Displaying and updating as expected. __Pass__
     - Hover over slices displays values. __Pass__
 
@@ -329,7 +329,7 @@ Responsive design was also tested in the Chrome Developer Tools device
 8.Timeline Chart
     - Displaying and working as expected. __Pass__
 
-9.Pie Chart 
+9.Donut Chart 
     - Displaying and updating as expected. __Pass__
     - Hover over slices displays values. __Pass__
 
@@ -367,9 +367,9 @@ For the Stacked Chart I used ideas I learned from a very useful blog by Anaelia 
 
 For bar charts I used ideas that I learned from the course material and also this blog by Mike Bostock also really helped - https://observablehq.com/@d3/bar-chart
 
-#### Pie Chart
+#### Donut Chart
 
-For the Pie chart I got ideas from the D3 documentation on github 
+For the Donut Chart I got ideas from the D3 documentation on github 
 https://github.com/d3/d3-shape#arcs
 
 ## Acknowledgements
