@@ -1,8 +1,7 @@
 
-body {
-    background-color: rgb(21,125,203);
-    color:  rgb(255, 255, 255);
-}
+/* ------------------------------
+    Nav bar
+------------------------------ */
 
 .navbar {
     position: relative;
@@ -32,7 +31,20 @@ body {
 }
 
 
-.button-instructions {
+/* ------------------------------
+    Body
+------------------------------ */
+
+body {
+    background-color: rgb(21,125,203);
+    color:  rgb(255, 255, 255);
+}
+
+/* ------------------------------
+    Button
+------------------------------ */
+
+.instructions-button {
     background-color: #303131;
     color: white;
     border: 2px solid #303131;
@@ -60,6 +72,10 @@ body {
     font-size: 22px;
     float: left;
 }
+
+/* ------------------------------
+    Charts
+------------------------------ */
 
 .axis {
 	font: 10px sans-serif;
@@ -101,14 +117,11 @@ body {
 
 #left-charts {
     background-color: rgb(21,125,203);
-    /* border: 5px solid #F1F3F3; */
-    /* border-radius: 15px; */
     padding-top: 5px;
 }
 
 #right-charts {
     background-color: rgb(21,125,203);
-    /* border-radius: 15px; */
     margin-top: 5px;
 }
 
@@ -117,24 +130,21 @@ body {
     padding-left: 20px;
 }
 
-#company-size {
-    /* border: 1px solid white; */
-}
-
 #units-sold {
-    /* border: 1px solid white; */
     margin-top: 5px;
 }
 
 #revenue {
-    /* border: 1px solid white; */
     margin-top: 5px;
 }
 
 #call-duration {
-    /* border: 1px solid white; */
     margin-top: 5px;
 }
+
+/* ------------------------------
+    Footer
+------------------------------ */
 
 .contact-details {
     margin-left: 45px;
