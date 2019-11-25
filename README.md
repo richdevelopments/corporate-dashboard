@@ -131,7 +131,7 @@ I created the Corportate Sales Dashboard logo at designevo.com
 
 - Hover Effects
 
-    - The **pie chart** has a hover effect that when hovering the different sections of the chart it displays the value that it represents.
+    - The **Pie chart** has a hover effect that when hovering the different sections of the chart it displays the value that it represents.
 
 
 ## Wireframes
@@ -171,7 +171,7 @@ This dynamically changes depending on the date range selected.
 
 **Charts**
 
-Stacked Chart -
+**Stacked Chart** -
  - The Stacked chart shows how ratios are changing over time.
  - Shows how the entire companies value has been changing over time.
  
@@ -194,7 +194,7 @@ vis.maxDateVal = d3.max(vis.dataFiltered, function(d){
 ```
 
 
-Timeline -
+**Timeline** -
 
 Use to pick the date range of the Stacked Chart using the brush generator.
 The X axis will always show the full extent of the data.
@@ -214,11 +214,11 @@ The brush generator -
 Using the ```.brushX``` call explicitly tells d3 that I want to create a one dimensional brush that goes in the X direction. 
 Using the ```.extent``` method to define the maximum and minimum coordinates that the brush should run between. Which means that D3 will create an overlay of the brush that runs from the 0,0 point of the visualization area all the way down to the bottom corner of the SVG grid. This means the user can draw a brush over any part of the visualizartion area. I'm then calling the brush in the context of the visualization by attest a group to the visuslization area buy giving it a call of brush```attr("class", "brush")``` and then using the ```.call``` method to run the brush generator ```.call(vis.brush);```
 
-Pie Chart -
+**Pie Chart** -
 
 - Displays the size of the companies. When hovering over a slice displays the units of each.
 
-Bar Chart -
+**Bar Chart** -
 
 - The Bar Charts display summaries of the data dependant of the date range selected on the timeline and what metrics are slected in the dropdown.
 
@@ -243,7 +243,7 @@ Bar Chart -
 - [GitPod](https://www.gitpod.io/) for developing and to handle version control.
 - [GitHub](https://github.com/) to store and share all project code.
 - [Am I Responsive](http://ami.responsivedesign.is/) to create the images in this readme file of each page displayed on different screen sizes.
-- [Designevo](designevo.com) 
+- [Designevo](designevo.com) Created the Corportate Sales Dashboard logo here.
 
 ### Libraries
 - [D3](https://d3js.org/) to create the charts.
@@ -295,13 +295,15 @@ Responsive design was also tested in the Chrome Developer Tools device
 
 #### Stacked Chart
 
+For the Stacked Chart I used ideas I learned from a very useful blog by Anaelia Ovalle http://bl.ocks.org/anaeliaovalle/e57763e85def2a95be931c69eff6bfa6
 
 #### Bar Charts
 
-- For bar charts I used ideas that I learned from the course material and also this blog by Mike Bostock also really helped - https://observablehq.com/@d3/bar-chart
+For bar charts I used ideas that I learned from the course material and also this blog by Mike Bostock also really helped - https://observablehq.com/@d3/bar-chart
 
 #### Pie Chart
 
+For the Pie chart I got ideas from the D3 documentation on github 
 https://github.com/d3/d3-shape#arcs
 
 ## Acknowledgements
