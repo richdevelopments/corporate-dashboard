@@ -131,7 +131,18 @@ BarChart.prototype.updateVis = function(){
         .attr("x", function(d){ return vis.x(d.category) })
         .attr("width", vis.x.bandwidth)
         .attr("fill", "#3c3874")
-        .on('mousemove', d => {
+        //Mouseover event reading out the color value of the fill attribute and calculating a darker value out of it.
+        .on("mouseover", function() {
+            if((r = $(this).css("fill").match(/(\d+),\s*(\d+),\s*(\d+)/i))) {
+            for(var i = 1; i < 4; i++) {
+                r[i] = Math.round(r[i] * .5);
+            }
+            $(this).attr("fill-old", $(this).css("fill"));
+            $(this).css("fill", 'rgb('+r[1]+','+r[2]+','+r[3]+')');
+            }
+        })
+        //Mousemove event with the tooltip to display category and value of each bar.
+         .on('mousemove', d => {
                   tip
                     .style('position', 'absolute')
                     .style('left', `${d3.event.pageX + 10}px`)
@@ -142,8 +153,11 @@ BarChart.prototype.updateVis = function(){
                       `<div><strong>${d.category}</strong></div> <span><strong>${d.size.toFixed(1)}</strong></span>`
                     );
                 })
-                .on('mouseout', () => tip.style('display', 'none')); // Hide the tooltip
-};
-
+        //Mouseout returning bar back to original color and removing the category and value on hover.
+        .on("mouseout", function() {
+            if($(this).attr("fill-old")) $(this).css("fill", $(this).attr("fill-old"));
+            return tip.style('display', 'none');
+        });          
+    };
      
 
