@@ -1,4 +1,6 @@
-
+/*
+*    DonutChart.js
+*/
 
 DonutChart = function(_parentElement, _variable){
 	this.parentElement = _parentElement;

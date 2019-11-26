@@ -81,6 +81,12 @@ BarChart.prototype.wrangleData = function(){
     vis.updateVis();
 };
 
+//Setting tooltip
+const tip = d3
+      .select('body')
+      .append('div')
+      .attr('class', 'tooltip');
+
 
 BarChart.prototype.updateVis = function(){
     var vis = this;
@@ -125,4 +131,19 @@ BarChart.prototype.updateVis = function(){
         .attr("x", function(d){ return vis.x(d.category) })
         .attr("width", vis.x.bandwidth)
         .attr("fill", "#3c3874")
+        .on('mousemove', d => {
+                  tip
+                    .style('position', 'absolute')
+                    .style('left', `${d3.event.pageX + 10}px`)
+                    .style('top', `${d3.event.pageY + 20}px`)
+                    .style('display', 'inline-block')
+                    .style('opacity', '1')
+                    .html(
+                      `<div><strong>${d.category}</strong></div> <span><strong>${d.size.toFixed(1)}</strong></span>`
+                    );
+                })
+                .on('mouseout', () => tip.style('display', 'none')); // Hide the tooltip
 };
+
+     
+
