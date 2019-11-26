@@ -144,14 +144,14 @@ BarChart.prototype.updateVis = function(){
         //Mousemove event with the tooltip to display category and value of each bar.
         .on('mousemove', d => {
             tip
-             .style('position', 'absolute')
-             .style('left', `${d3.event.pageX + 10}px`)
-             .style('top', `${d3.event.pageY + 20}px`)
-             .style('display', 'inline-block')
-             .style('opacity', '1')
-             .html(
-               `<div><strong>${d.category}</strong></div> <span><strong>${d.size.toFixed(1)}</strong></span>`
-            );
+            .style('position', 'absolute')
+            .style('left', `${d3.event.pageX + 10}px`)
+            .style('top', `${d3.event.pageY + 20}px`)
+            .style('display', 'inline-block')
+            .style('opacity', '1')
+            .html(
+              `<div><strong>${d.category}</strong></div> <span><strong>${d.size.toFixed(1)}</strong></span>`
+           );
         })
         //Mouseout returning bar back to original color and removing the category and value on hover.
         .on("mouseout", function() {
