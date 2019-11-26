@@ -13,7 +13,8 @@ The sales teams are split between 4 regions - Northeast, South, Midwe
 
 To use the dashboard the user can select a metric from the dropdown, either Revenue, Call Time and Units Sold, to display the performance of the 4 regions throughtout the whole year.
 The user can then drag over the Timeline chart to select and zoom in on a specific period in the year, to see and compare the performance of all 4 regions.
-The Bar Charts on the right will dynamically update accordingly, displaying an average of each of the metrics and the Donut Chart changing to display the size of the company who the goods are being sold to.
+The Bar Charts on the right will dynamically update accordingly, displaying an average of each of the metrics. The user can hover over the individual Bars which highlights them and displays the category and result value of each one. 
+The Donut Chart dynamically updates accordingly to display the size of the company who the goods are being sold to.
 
 
 ## Table of Contents
@@ -126,8 +127,8 @@ I created the Corportate Sales Dashboard logo at designevo.com
 
 - Hover Effects
 
+    - Hovering over the individual Bars in the **Bar Charts** highlights them and displays the category and result of each one.
     - The **Donut Chart** has a hover effect that when hovering the different sections of the chart it displays the value that it represents.
-
 
 ## Wireframes
 
@@ -220,7 +221,38 @@ Using the ```.extent``` method to define the maximum and minimum coordinates tha
 
 **Bar Chart** -
 
-- The Bar Charts display summaries of the data dependant of the date range selected on the timeline and what metrics are slected in the dropdown.
+- The Bar Charts display summaries of the data dependant of the date range selected on the Timeline and what metrics are slected in the dropdown.
+- Hovering over the individual Bars highlights them and displays the category and result value of each one.
+I achieved this by adding a ```mouseover``` event to the ```rect``` tag, reading out the color value of the ```fill``` attribute 
+and calculated a darker value out if it which probably isn't the cleanest way - 
+
+
+```
+.on("mouseover", function() {
+    if((r = $(this).css("fill").match(/(\d+),\s*(\d+),\s*(\d+)/i))) {
+    for(var i = 1; i < 4; i++) {
+        r[i] = Math.round(r[i] * .5);
+    }
+    $(this).attr("fill-old", $(this).css("fill"));
+    $(this).css("fill", 'rgb('+r[1]+','+r[2]+','+r[3]+')');
+    }
+})
+.on('mousemove', d => {
+    tip
+    .style('position', 'absolute')
+    .style('left', `${d3.event.pageX + 10}px`)
+    .style('top', `${d3.event.pageY + 20}px`)
+    .style('display', 'inline-block')
+    .style('opacity', '1')
+    .html(
+      `<div><strong>${d.category}</strong></div> <span><strong>${d.size.toFixed(1)}</strong></span>`
+    );
+})
+.on("mouseout", function() {
+    if($(this).attr("fill-old")) $(this).css("fill", $(this).attr("fill-old"));
+    return tip.style('display', 'none');
+});
+ ```    
 
 **Dropdown**
 
@@ -228,9 +260,9 @@ Using the ```.extent``` method to define the maximum and minimum coordinates tha
 
 ## Features Left to Implement
 
-1. Add more areas of a company to display the data of
-
-2. Add more interesting graphs
+1. Used DC.js and Crossfilter to make charts even more interactive.
+2. Add more areas of a company to display the data of.
+3. Add more interesting graphs
 
 
 # Data
