@@ -328,6 +328,8 @@ All steps on desktop were repeated in browsers: Firefox, Chrome and I
 
 10.Bar Charts
     - Displaying and updating as expected. __Pass__
+    - Hovering over bars reveals the category and result that bar represents. __Pass__
+    - The bars change color when hovering over them. __Pass__
 
 11.Contact information
     - Confirm they are easily to read. __Pass__
@@ -369,6 +371,8 @@ Responsive design was also tested in the Chrome Developer Tools device
 
 10.Bar Charts
     - Displaying and updating as expected. __Pass__
+    - Clicking on the bars reveals the category and result that bar represents. __Pass__
+    - The bars change color when clicking them. __Pass__
 
 11.Contact information
     - Confirm they are easily to read. __Pass__
