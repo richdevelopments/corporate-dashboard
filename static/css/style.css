@@ -36,7 +36,7 @@
 ------------------------------ */
 
 body {
-    background-color: rgb(21,125,203);
+    background-color: rgb(17,161,203);
     color:  rgb(255, 255, 255);
 }
 
@@ -62,7 +62,7 @@ body {
 #instructions-fade {
     display: none;
     color: black;
-    background-color: rgb(21,125,203);
+    background-color: rgb(17,161,203);
     margin-bottom: 30px;
     padding: 10px 20px;
     text-align: justify;
@@ -116,12 +116,12 @@ body {
 }
 
 #left-charts {
-    background-color: rgb(21,125,203);
+    background-color: rgb(17,161,203);
     padding-top: 5px;
 }
 
 #right-charts {
-    background-color: rgb(21,125,203);
+    background-color: rgb(17,161,203);
     margin-top: 5px;
 }
 
