@@ -300,40 +300,42 @@ All steps on desktop were repeated in browsers: Firefox, Chrome and I
 #### Elements on the Dashboard page
 
 1. Navbar 
-     - Logo displays in the Navbar as expected. __Pass__
+- Logo displays in the Navbar as expected. __Pass__
 
 2.Headings 
-    - Confirm the headings on the page is easy to read. __Pass__
+- Confirm the headings on the page is easy to read. __Pass__
 
 3.Page text
-    - Confirm the text for the page is easy to read. __Pass__
+- Confirm the text for the page is easy to read. __Pass__
 
 4.Instruction button 
-    - Displaying instructions as expected. __Pass__
+- Displaying instructions as expected. __Pass__
 
 5.Date above Dropdown.
-    - Displaying the dates selected and updating dynamically as expected. __Pass__
+- Displaying the dates selected and updating dynamically as expected. __Pass__
 
 6.Dropdown menu 
-    - Displaying and working as expected. __Pass__
+- Displaying and working as expected. __Pass__
 
 7.Stacked Chart 
-    - Displaying results and changing dynamically as expected. __Pass__
+- Displaying results and changing dynamically as expected. __Pass__
 
 8.Timeline Chart
-    - Displaying and working as expected. __Pass__
+- Displaying and working as expected. __Pass__
 
 9.Donut Chart 
-    - Displaying and updating as expected. __Pass__
-    - Hover over slices displays values. __Pass__
+- Displaying and updating as expected. __Pass__
+- Hover over slices displays values. __Pass__
 
 10.Bar Charts
-    - Displaying and updating as expected. __Pass__
-    - Hovering over bars reveals the category and result that bar represents. __Pass__
-    - The bars change color when hovering over them. __Pass__
+- Displaying and updating as expected. __Pass__
+
+- Hovering over bars reveals the category and result that bar represents. __Pass__
+
+- The bars change color when hovering over them. __Pass__
 
 11.Contact information
-    - Confirm they are easily to read. __Pass__
+- Confirm they are easily to read. __Pass__
 
 
 
@@ -343,40 +345,40 @@ All steps below were repeated to test mobile and tablet specific elem
 Responsive design was also tested in the Chrome Developer Tools device simulators on all options and orientations.
 
 1. Navbar 
-     - Logo displays in the Navbar as expected. __Pass__
+- Logo displays in the Navbar as expected. __Pass__
 
 2.Headings 
-    - Confirm the headings on the page is easy to read. __Pass__
+- Confirm the headings on the page is easy to read. __Pass__
 
 3.Page text
-    - Confirm the text for the page is easy to read. __Pass__
+- Confirm the text for the page is easy to read. __Pass__
 
 4.Instruction button 
-    - Displaying instructions as expected. __Pass__
+- Displaying instructions as expected. __Pass__
 
 5.Date above Dropdown.
-    - Displaying the dates selected and updating dynamically as expected. __Pass__
+- Displaying the dates selected and updating dynamically as expected. __Pass__
 
 6.Dropdown menu 
-    - Displaying and working as expected. __Pass__
+- Displaying and working as expected. __Pass__
 
 7.Stacked Chart 
-    - Displaying results and changing dynamically as expected. __Pass__
+- Displaying results and changing dynamically as expected. __Pass__
 
 8.Timeline Chart
-    - Displaying and working as expected. __Pass__
+- Displaying and working as expected. __Pass__
 
 9.Donut Chart 
-    - Displaying and updating as expected. __Pass__
-    - Hover over slices displays values. __Pass__
+- Displaying and updating as expected. __Pass__
+- Hover over slices displays values. __Pass__
 
 10.Bar Charts
-    - Displaying and updating as expected. __Pass__
-    - Clicking on the bars reveals the category and result that bar represents. __Pass__
-    - The bars change color when clicking them. __Pass__
+- Displaying and updating as expected. __Pass__
+- Clicking on the bars reveals the category and result that bar represents. __Pass__
+- The bars change color when clicking them. __Pass__
 
 11.Contact information
-    - Confirm they are easily to read. __Pass__
+- Confirm they are easy to read. __Pass__
 
 
 ### Bugs Descovered
