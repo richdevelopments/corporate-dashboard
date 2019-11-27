@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <title>Corporate Dashboard</title>
+    
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" />
     <!-- jQuery UI CSS -->
@@ -23,24 +24,40 @@
                 <img id="logo" src="static/images/logo.png">
             </div>      
         </div>
+        
     </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-11 col-lg-11">
-                <button class="instructions-button">Instructions</button>
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                    <div id="instructions-fade">
-                        <p> Select a metric from the dropdown menu to see each regions performance for that metric throughout the year.
-                        To analyse the data in a more specific time period in the year, drag over the Timeline Chart to select the desired time in the year. 
-                        The Stacked Chart will then zoom in to that time period in the year, displaying the results for all 4 regions. The From and To dates above the dropdown will also update dynamically.
-                        The Bar Charts on the right will display an average of the performance for that time period selected. Hovering over or clicking on (tablet and mobile) each bar in the Bar Charts will display the category and result value. 
-                        The Donut Chart will display the size of the companies that the goods were sold to which you can hover over to see the exact units per slice.
-                        </p>
-                    </div>
-                </div>
-            </div>
+    <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#info">Information</button>
+    <!-- Modal -->
+    <div class="modal fade" id="info" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="infoModalLabel">Information</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p> 
+            Select a metric from the dropdown menu to see each regions performance 
+            for that metric throughout the year.
+            To analyse the data in a more specific time period in the year, 
+            drag over the Timeline Chart to select the desired time in the year. 
+            The Stacked Chart will then zoom in to that time period in the year, 
+            displaying the results for all 4 regions. 
+            The From and To dates above the dropdown will also update dynamically.
+            The Bar Charts on the right will display an average of the performance 
+            for that time period selected. Hovering over or clicking on (tablet and mobile) 
+            each bar in the Bar Charts will display the category and result value. 
+            The Donut Chart will display the size of the companies that the goods 
+            were sold to which you can hover over to see the exact units per slice.
+            </p>
+        </div>
         </div>
     </div>
+    </div>
+  
     <div class="container">
         <div class="row">
             <div id="left-charts" class="col-sm-12 col-md-12 col-lg-8">
@@ -78,33 +95,40 @@
             </div>
         </div>
     </div>
+    <footer class="container col-sm-12">
+			<div class="container footer-signature col-sm-4" >
+                <label class="contact">Getting Started</label><br>
+                <a type="button" class="" data-toggle="modal" data-target="#info">Information</a>
+				
+			</div>
+            <div class="col-sm-4 contact" >
+                <label class="contact">Contact</label>
+                <p>123 Business Park</p>
+                <p>Ainsworth</p>
+                <p>BL2 0DY</p>
+                <p>admin@guitarshed.rock</p>
+			</div>
+            <div class="col-sm-4 contact" >
+
+			</div>
+            
+		</footer>
     <div class="contact-details">
-        <label class="contact">Contact</label>
-        <p>admin@csd.coe.yewkay</p>
+       
     </div>
 
 <!-- External JS Libraries -->
 <script type="text/javascript" src="static/js/jquery.min.js"></script>
 <script type="text/javascript" src="static/js/jquery-ui.min.js"></script>
-
-<script type="text/javascript" src="static/js/crossfilter.min.js"></script>
-<script type="text/javascript" src="static/js/queue.min.js"></script>
-
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    
 <!-- Custom JS -->
 <script type="text/javascript" src="static/js/barChart.js"></script>
 <script type="text/javascript" src="static/js/stackedAreaChart.js"></script>
 <script type="text/javascript" src="static/js/donutChart.js"></script>
 <script type="text/javascript" src="static/js/timeline.js"></script>
 <script type="text/javascript" src="static/js/main.js"></script>
-
-<!-- Instructions fade toggle -->
-<script>
-$(document).ready(function(){
- $("button").click(function(){
-    $("#instructions-fade").fadeToggle("slow");
-  });
-});
-</script>
 
 
 </body>
