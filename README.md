@@ -13,7 +13,7 @@ The sales teams are split between 4 regions - Northeast, South, Midwe
 
 To use the dashboard the user can select a metric from the dropdown, either Revenue, Call Time and Units Sold, to display the performance of the 4 regions throughtout the whole year.
 The user can then drag over the Timeline chart to select and zoom in on a specific period in the year, to see and compare the performance of all 4 regions.
-The Bar Charts on the right will dynamically update accordingly, displaying an average of each of the metrics. The user can hover over or click on (tablet and mobile)the individual Bars which highlights them and displays the category and result value of each one. 
+The Bar Charts on the right will dynamically update accordingly, displaying an average of each of the metrics. The user can hover over or click on (tablet and mobile) the individual Bars which highlights them and displays the category and result value of each one. 
 The Donut Chart dynamically updates accordingly to display the size of the company who the goods are being sold to.
 
 
