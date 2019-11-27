@@ -12,7 +12,7 @@ The data dashboard is to find out which parts of the business are d
 The sales teams are split between 4 regions - Northeast, South, Midwest and West, and they want to see how their stats compare between them.
 
 To use the dashboard the user can select a metric from the dropdown, either Revenue, Call Time and Units Sold, to display the performance of the 4 regions throughtout the whole year.
-The user can then drag over the Timeline chart to select and zoom in on a specific period in the year, to see and compare the performance of all 4 regions.
+The user can then drag over the Timeline Chart to select and zoom in on a specific period in the year, to see and compare the performance of all 4 regions. The From and To dates above the dropdown will also update dynamically.
 The Bar Charts on the right will dynamically update accordingly, displaying an average of each of the metrics. The user can hover over or click on (tablet and mobile) the individual Bars which highlights them and displays the category and result value of each one. 
 The Donut Chart dynamically updates accordingly to display the size of the company who the goods are being sold to.
 
@@ -178,6 +178,7 @@ fading in when the button is first clicked and fading out when the Instruction b
  - Shows how the entire companies value has been changing over time.
  
 - The user can zoom in on a specific date range selected on the timeline chart and the X and Y axis of the Stacked Chart will dynamically change to the selected time in the year and the chart will display that data associated to that time range.
+The From and To dates above the dropdown will also update dynamically
 
 - The user can select a metric - Revenue, Call Time and Units Sold from the dropdown menu then that data will be displayed in the Stacked Chart.
 
