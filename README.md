@@ -127,8 +127,9 @@ I created the Corportate Sales Dashboard logo at designevo.com
 
 - Hover Effects
 
-    - Hovering over the individual Bars in the **Bar Charts** highlights them and displays the category and result of each one.
-    - The **Donut Chart** has a hover effect that when hovering the different sections of the chart it displays the value that it represents.
+- Hovering over the individual Bars in the **Bar Charts** highlights them and displays the category and result of each one.
+- The **Donut Chart** has a hover effect that when hovering the different sections of the chart it displays the value that it represents.
+
 
 ## Wireframes
 
