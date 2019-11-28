@@ -47,9 +47,12 @@ body {
     /* width: 600px; */
     max-width: 100%;
 }
+
 .modal-title  {
+    
     color: black;
 }
+
 .modal-body  {
     text-align: center;
     color: black;
