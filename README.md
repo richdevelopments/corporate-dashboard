@@ -115,15 +115,15 @@ I created the Corportate Sales Dashboard logo at designevo.com
 
 - The colours for this project were chosen because I wanted to the site to look smart and corporate and I feel I have achieved this.
 
-- A dark purple colour was chosen for the main text and headers as it made the text stand out on the lighter green background.
+- Whites and Blacks were chosen for the main text and headers as it made the text stand out on the lighter green background.
 
-- The navbar background colour is white, which makes the logo stand out and looks smart.
+- The navbar and footer background colours are white, which makes the logo and footer text stand out and looks smart.
 
 - The body colour is a lightish green. I feel this is a good colour to make the other elememnts stand out.
 
-- I tried to make the 4 regions in the stacked chart colourful so they stand out on the green background.
+- I tried to make the 4 regions in the stacked chart colourful so they stand out on the plain green background.
 
-- The bar charts are a dark purple so they stand out on the green background but are also different to the stacked chart.
+- The Bar charts and Timeline are a dark purple so they stand out on the green background but are also different to the stacked chart.
 
 ### Styling
 
@@ -156,7 +156,10 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) duri
 
 - Footer
     - The footer features:
+        - Information link that opens the information modal.
+        - Link to D3.js.
         - Contact information for Corportate Sales Dashboard.
+        - Product links - Pricing and FAQ, which are still left to implement.
 
 
 
