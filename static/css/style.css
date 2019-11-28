@@ -36,41 +36,31 @@
 ------------------------------ */
 
 body {
-    background-color: rgb(17,161,203);
+    background-color: rgb(43, 146, 138);
     color:  rgb(255, 255, 255);
+}
+
+/* ------------------------------
+    Modal
+------------------------------ */
+.modal {
+    /* width: 600px; */
+    max-width: 100%;
+}
+.modal-title  {
+    color: black;
+}
+.modal-body  {
+    text-align: center;
+    color: black;
 }
 
 /* ------------------------------
     Button
 ------------------------------ */
-
-.instructions-button {
-    background-color: #303131;
-    color: white;
-    border: 2px solid #303131;
-    border-radius: 6px;
-    margin-bottom: 35px;
-    margin-top: 10px;
-    font-family: 'Lato', sans-serif; 
-    font-size: 20px;
-    font-weight: 500;
-    padding: 4px 40px;
+.btn {
+    border: 1px solid black;
     float: right;
-    margin-right: 20px;
-}
-
-#instructions-fade {
-    display: none;
-    color: black;
-    background-color: rgb(17,161,203);
-    margin-bottom: 30px;
-    padding: 10px 20px;
-    text-align: justify;
-    border-radius: 8px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 22px;
-    float: left;
 }
 
 /* ------------------------------
@@ -116,12 +106,12 @@ body {
 }
 
 #left-charts {
-    background-color: rgb(17,161,203);
+    background-color: rgb(43, 146, 138);
     padding-top: 5px;
 }
 
 #right-charts {
-    background-color: rgb(17,161,203);
+    background-color: rgb(43, 146, 138);
     margin-top: 5px;
 }
 
@@ -145,6 +135,17 @@ body {
 /* ------------------------------
     Footer
 ------------------------------ */
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #ededed;
+    color: rgb(0, 0, 0);
+    /* width: 100%; */
+    background-color: rgb(255, 255, 255);
+}
 
 .contact-details {
     margin-left: 45px;
