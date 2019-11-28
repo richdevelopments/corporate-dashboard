@@ -3,7 +3,7 @@
 ## Introduction
 ----
 <div align="center">
-    <img src="https://i.ibb.co/2qCHHmW/Screenshot-2019-11-25-at-16-45-54.png" href="https://richdevelopments.github.io/corporate-dashboard/" target="_blank" rel="noopener" alt="Image of how home page looks on all screen sizes" aria-label="Image of how home page looks on all screen sizes" />
+    <img src="https://i.ibb.co/HdJBq3Q/corporate-sales-dash.png" href="https://richdevelopments.github.io/corporate-dashboard/" target="_blank" rel="noopener" alt="Image of how home page looks on all screen sizes" aria-label="Image of how home page looks on all screen sizes" />
 </div>
 <br>
 
@@ -16,6 +16,12 @@ The user can then drag over the Timeline Chart to select and zoom in on a specif
 The Bar Charts on the right will dynamically update accordingly, displaying an average of each of the metrics. The user can hover over or click on (tablet and mobile) the individual Bars which highlights them and displays the category and result value of each one. 
 The Donut Chart dynamically updates accordingly to display the size of the company who the goods are being sold to.
 
+DC.js and Crossfilter.js - 
+Because I wanted to implement the Timeline Chart into the project, there didn't seem to be an out of the box solution to work with DC.js.
+I couldn't find a good solution within DC.js to work with the Timeline, so I had to use pure D3, 
+This was a limitaion within DC.js, as it didn't have the functrionality I required for the site and Timeline Chart.
+This has impacted the interactivity across all the charts.
+In future releases I will be looking to migrate the code so it works better with DC and Crossfilter.
 
 ## Table of Contents
 ----
@@ -109,15 +115,15 @@ I created the Corportate Sales Dashboard logo at designevo.com
 
 - The colours for this project were chosen because I wanted to the site to look smart and corporate and I feel I have achieved this.
 
-- A dark purple colour was chosen for the main text and headers as it made the text stand out on the lighter blue background.
+- A dark purple colour was chosen for the main text and headers as it made the text stand out on the lighter green background.
 
 - The navbar background colour is white, which makes the logo stand out and looks smart.
 
-- The body colour is a light but bold blue and has a very slight gradient. I feel this is a good colour to make the other elememnts stand out.
+- The body colour is a lightish green. I feel this is a good colour to make the other elememnts stand out.
 
-- I tried to make the 4 regions in the stacked chart colourful so they stand out on the light blue background.
+- I tried to make the 4 regions in the stacked chart colourful so they stand out on the green background.
 
-- The bar charts are a dark purple so they stand out on the blue background but are also different to the stacked chart.
+- The bar charts are a dark purple so they stand out on the green background but are also different to the stacked chart.
 
 ### Styling
 
@@ -157,7 +163,7 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) duri
 ### Dashboard Page
 
 <div align="center">
-    <img src="https://i.ibb.co/2qCHHmW/Screenshot-2019-11-25-at-16-45-54.png" href="https://richdevelopments.github.io/corporate-dashboard/" target="_blank" rel="noopener" alt="Image of how home page looks on all screen sizes" aria-label="Image of how home page looks on all screen sizes" />
+    <img src="https://i.ibb.co/HdJBq3Q/corporate-sales-dash.png" href="https://richdevelopments.github.io/corporate-dashboard/" target="_blank" rel="noopener" alt="Image of how home page looks on all screen sizes" aria-label="Image of how home page looks on all screen sizes" />
 </div>
 <br>
 
@@ -166,10 +172,9 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) duri
 - Most of the charts have subheadings above them. The Stacked Chart has the date range above it. 
 This dynamically changes depending on the date range selected.
 
-**Instructions button**
+**Information button**
 
-- The Instructions button reveals instruction on how to use the dashboard. I added some jQuery to make the transition smoother, 
-fading in when the button is first clicked and fading out when the Instruction button is clicked again.
+- The Information button reveals a modal which displays information on how to use the dashboard.
 
 **Charts**
 
@@ -217,6 +222,8 @@ The brush generator -
 Using the ```.brushX``` call explicitly tells d3 that I want to create a one dimensional brush that goes in the X direction. 
 Using the ```.extent``` method to define the maximum and minimum coordinates that the brush should run between. Which means that D3 will create an overlay of the brush that runs from the 0,0 point of the visualization area all the way down to the bottom corner of the SVG grid. This means the user can draw a brush over any part of the visualizartion area. I'm then calling the brush in the context of the visualization by attest a group to the visuslization area buy giving it a call of brush```attr("class", "brush")``` and then using the ```.call``` method to run the brush generator ```.call(vis.brush);```
 
+
+
 **Donut Chart** -
 
 - Displays the size of the companies that were sold to. When hovering over a slice displays the units of each.
@@ -256,7 +263,6 @@ and calculated a darker value out if it which probably isn't the cleanest way -
 });
 ```
 
-   
 
 **Dropdown**
 
@@ -264,9 +270,10 @@ and calculated a darker value out if it which probably isn't the cleanest way -
 
 ## Features Left to Implement
 
-1. Used DC.js and Crossfilter to make charts even more interactive.
+1. In future releases I will be looking to migrate the code so it works better with DC and Crossfilter to make charts even more interactive.
 2. Add more areas of a company to display the data of.
-3. Add more interesting graphs
+3. Add more interesting graphs.
+4. Make Pricing and FAQ footer links work.
 
 
 # Data
@@ -309,8 +316,8 @@ All steps on desktop were repeated in browsers: Firefox, Chrome and I
 3.Page text
 - Confirm the text for the page is easy to read. __Pass__
 
-4.Instruction button 
-- Displaying instructions as expected. __Pass__
+4.Instruction button and footer link 
+- Displaying modal with information as expected. __Pass__
 
 5.Date above Dropdown.
 - Displaying the dates selected and updating dynamically as expected. __Pass__
@@ -354,8 +361,8 @@ Responsive design was also tested in the Chrome Developer Tools device
 3.Page text
 - Confirm the text for the page is easy to read. __Pass__
 
-4.Instruction button 
-- Displaying instructions as expected. __Pass__
+4.Instruction button and footer link 
+- Displaying modal with information as expected. __Pass__
 
 5.Date above Dropdown.
 - Displaying the dates selected and updating dynamically as expected. __Pass__
