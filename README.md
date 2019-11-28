@@ -172,7 +172,7 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) duri
 - Most of the charts have subheadings above them. The Stacked Chart has the date range above it. 
 This dynamically changes depending on the date range selected.
 
-**Information button**
+**Information button/Bootstrap Modal**
 
 - The Information button reveals a modal which displays information on how to use the dashboard.
 
@@ -420,6 +420,9 @@ For bar charts I used ideas that I learned from the course material and also t
 
 For the Donut Chart I got ideas from the D3 documentation on github 
 https://github.com/d3/d3-shape#arcs
+
+#### Bootstrap Modal
+I used the Bootsrtap Modal for the modal displaying the dashboard information.
 
 ## Acknowledgements
 
