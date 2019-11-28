@@ -18,7 +18,7 @@ The Donut Chart dynamically updates accordingly to display the size of the compa
 
 DC.js and Crossfilter.js - 
 Because I wanted to implement the Timeline Chart into the project, there didn't seem to be an out of the box solution to work with DC.js.
-I couldn't find a good solution within DC.js to work with the Timeline, so I had to use pure D3, 
+I couldn't find a good solution within DC.js to work with the Timeline, so I had to use pure D3. 
 This was a limitaion within DC.js, as it didn't have the functrionality I required for the site and Timeline Chart.
 This has impacted the interactivity across all the charts.
 In future releases I will be looking to migrate the code so it works better with DC and Crossfilter.
